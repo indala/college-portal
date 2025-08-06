@@ -1,0 +1,78 @@
+.header {
+  background-color: #1f1f1f; /* dark gray background */
+  color: #f8f9fa; /* light text */
+  border-bottom: 1px solid #333;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+}
+
+/* Heading (Welcome text) */
+.header h4 {
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Profile dropdown */
+#dropdown-user {
+  background-color: #2a2a2a !important;
+  color: #f8f9fa !important;
+  border: none !important;
+  padding: 0.4rem 0.6rem;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+#dropdown-user:hover {
+  background-color: #343a40 !important;
+}
+
+.dropdown-menu {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+}
+
+.dropdown-menu .dropdown-header,
+.dropdown-menu .dropdown-item-text {
+  color: #cccccc;
+  font-size: 0.875rem;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #f8f9fa;
+  font-size: 0.9rem;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #3a3a3a;
+  color: #0dcaf0;
+}
+
+.dropdown-divider {
+  border-top: 2px solid #444;
+}
+
+/* Profile image */
+#dropdown-user img {
+  object-fit: cover;
+  border: 2px solid #666;
+  transition: border 0.3s;
+}
+
+#dropdown-user img:hover {
+  border: 2px solid #0dcaf0;
+}
+
+/* Upload label */
+#profileUpload + span {
+  margin-left: 0.5rem;
+}
+
+/* Logo (if needed later) */
+.logo {
+  height: 40px;
+}

@@ -1,0 +1,115 @@
+.dashboard-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header-fixed {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Row directly below header */
+.dashboard-main {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.sidebar-wrapper {
+  background-color: #212529;
+  height: 100%;
+}
+
+.outlet-col {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+}
+
+.outlet-scrollable {
+  overflow-y: auto;
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Mobile nav sticks to bottom */
+.mobile-nav-fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1040;
+  background-color: white;
+  border-top: 1px solid #dee2e6;
+}
+
+@media (max-width: 767.98px) {
+  .outlet-scrollable {
+    padding-top: 4.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+/* Inactivity warning style */
+.logout-warning-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1060;
+  font-weight: 500;
+  font-size: 0.95rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+/* Dark theme for dashboard layout */
+.dashboard-layout,
+.dashboard-main,
+.outlet-scrollable {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Header Dark */
+.header-fixed {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-bottom: 1px solid #333;
+}
+
+/* Mobile Nav Bar Dark */
+.mobile-nav-fixed {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-top: 1px solid #333;
+}
+
+/* Logout warning bar dark mode */
+.logout-warning-bar {
+  background-color: #2c2c2c;
+  color: #f8d7da;
+}
+.sidebar-wrapper {
+  background-color: #212529;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  /* Hide scrollbar - Firefox */
+  scrollbar-width: none;
+
+  /* Hide scrollbar - IE/Edge */
+  -ms-overflow-style: none;
+}
+
+.sidebar-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

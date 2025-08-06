@@ -1,0 +1,44 @@
+.scroll-to-top {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1100;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-to-top:hover {
+  background-color: #555;
+}
+
+/* Style for fixed (window scroll) */
+.scroll-to-top.fixed {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+
+/* Style for absolute (container scroll) */
+.scroll-to-top.absolute {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+}
+
+/* Adjust for mobile if needed */
+@media (max-width: 767.98px) {
+  .scroll-to-top.fixed,
+  .scroll-to-top.absolute {
+    bottom: 90px;
+  }
+}
