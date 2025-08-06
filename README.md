@@ -47,7 +47,7 @@ npm install
 npm start
 ```
 
-Runs the React app at: http://localhost:3000
+Runs the React app at: http://localhost:5173
 
 #### Terminal 2 – Start Backend (Node.js + Express)
 
