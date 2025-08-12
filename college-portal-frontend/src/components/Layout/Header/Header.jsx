@@ -3,7 +3,7 @@ import { Dropdown, Image } from 'react-bootstrap';
 import { jwtDecode } from 'jwt-decode';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './Header.css'
+import './Header.css';
 
 const Header = () => {
   const [user, setUser] = useState({});
@@ -66,7 +66,7 @@ const Header = () => {
     const { role } = decoded;
 
     const res = await axios.put(
-      `http://localhost:5000/api/${role.toLowerCase()}/profile-picture`, // ✅ fixed URL
+      `http://localhost:5000/api/${role.toLowerCase()}/profile-picture`, 
       formData,
       {
         headers: {
