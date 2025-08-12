@@ -7,6 +7,10 @@ const roleToTable = {
   manager: 'manager',
   lab_incharge: 'lab_incharge',
   hod: 'hod',
+  parent: 'parents',
+  exam_cell: 'exam_cell',
+  hostel_manager: 'hostel_manager',
+  transport_manager: 'transport_manager'
 };
 
 export const getUserProfileUrl = async (roleName, collegeId) => {
