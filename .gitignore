@@ -1,0 +1,9 @@
+# Ignore all node_modules folders
+**/node_modules/
+
+# Optional: ignore build folders
+**/build/
+**/dist/
+
+# macOS junk
+.DS_Store
